@@ -21,7 +21,12 @@ defmodule Snap.Cluster do
     url: "http://localhost:9200",
     username: "username",
     password: "password",
-    pool_size: 10
+    pool_size: 10,
+    conn_opts: [
+      transport_opts: [
+        verify: :verify_peer
+      ]
+    ]
   ```
   """
   defmacro __using__(opts) do
