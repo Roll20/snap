@@ -33,3 +33,4 @@ snap-*.tar
 
 # Contains Dialyzer PLTs
 /priv
+gitleaks_report.json
